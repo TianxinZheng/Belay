@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>index page</title>
+  </head>
+  <body>
+
+    <div id="login_form">
+      <h1 class="title">Welcome to Belay </h1>
+      <label for="email">email address</label>
+      <input type="text" name="email" >
+      <label for="password">password</label>
+      <input type="password" name="password">
+      <input type="submit" name="log_in_button" value="log in" onclick="login()">
+      <a href="/register">New user?</a>
+      <a href="/ask_to_reset_password">Forget your password?</a>
+    </div>
+
+    <div id="registration_form">
+      <h1 class="title">Create your Belay acount</h1>
+      <label for="email">email address</label>
+      <input type="text" name="new_email">
+      <label for="username">username</label>
+      <input type="text" name="new_username">
+      <label for="password">password</label>
+      <input type="password" name="new_password">
+      <label for="retype_password">retype password</label>
+      <input type="password" name="retype_password">
+      <input type="submit" name="create_button" value="create" onclick="create_account()">
+    </div>
+
+    <div id="ask_to_reset_password">
+      <label for="email">email address</label>
+      <input type="text" name="reset_email">
+      <input type="submit" name="send_button" value="send email" onclick="reset_password()">
+    </div>
+
+    <div id="reset_page">
+
+      <p id="email_to_reset"> </p>
+      <label for="password">password</label>
+      <input type="password" name="reset_password">
+      <label for="retype_password">retype password</label>
+      <input type="password" name="retype_reset_password">
+      <input type="submit" name="change_button" value="change password" onclick="change_password()">
+    </div>
+
+    <div id="main_page">
+      <div class="column" id="sidebar">
+        <button type="button" name="create_channel" onclick="create_channel()">Create New Channel</button>
+        <br>
+        <div id="channels">
+
+        </div>
+      </div>
+
+      <div class="column" id="chat_area">
+        <h2 id="channel_title"></h2>
+        <div id="chat_history">
+
+        </div>
+        <div id="chat_window">
+          <textarea id="input" rows="4" cols="60"></textarea>
+            <button type="button" id="send_message" onclick="post_message()">Send</button>
+        </div>
+      </div>
+
+      <div class="column" id="thread">
+         <button id="close_button">close</button>
+          <div id="reply_history">
+
+          </div>
+          <div id="thread_window">
+            <textarea id="reply_input" rows="4" cols="30"></textarea>
+              <button type="button" id="send_reply" onclick="post_reply()">Send</button>
+          </div>
+      </div>
+    </div>
+  </body>
+  <link rel="stylesheet" type="text/css" href="http://localhost:5000/static/index.css">
+<script src="http://localhost:5000/static/index.js"></script>
+</html>

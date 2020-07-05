@@ -1,0 +1,76 @@
+body {
+  height: 100%;
+}
+
+
+#login_form {
+  display: none;
+}
+#registration_form {
+  display: none;
+}
+
+#ask_to_reset_password {
+  display: none;
+}
+#reset_page {
+  display: none;
+}
+
+.column {
+  padding: 30px;
+  height: 100%;
+  overflow: auto;
+}
+#main_page {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  flex-direction: row;
+}
+#sidebar {
+  background-color: grey;
+  width: 20%;
+  /* float: left; */
+}
+#chat_area {
+  display: inline-block;
+  /* height: 600px; */
+  width: 45%;
+}
+#thread {
+  width: 20%;
+  background-color: pink;
+  /* float: right; */
+  display: none;
+}
+.channel_content {
+  height: 100%;
+  display: none;
+}
+.title {
+  text-align: center;
+}
+.names {
+  font-size: 20px;
+}
+#chat_window {
+  position: inherit;
+  bottom: 30px;
+}
+
+#close_button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.usernames {
+  color: blue;
+}
+
+@media screen and ( max-width: 800px ) {
+     #main_page {
+       flex-direction: column;
+     }
+}
