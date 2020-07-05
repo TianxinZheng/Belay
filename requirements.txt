@@ -1,0 +1,9 @@
+# Usage: pip3 install -r requirements.txt
+
+bcrypt ~= 3.1.7
+flask-bcrypt ~= 0.7.1
+mysql-connector-python ~= 8.0.19
+flask-mysql ~= 1.5.1
+pyjwt ~= 1.7.1
+flask_jwt_extended ~= 3.24.1
+sendgrid ~= 6.1.2
