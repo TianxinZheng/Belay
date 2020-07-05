@@ -3,16 +3,15 @@
 ### How to run it?
 
 1. install all needed packages
-pip install -r requirements.txt
+  `pip install -r requirements.txt`
 
 2. create local database
-open your mysql database with mysql -u root -p
-paste the sql query in DBDatabaseCreation.sql to create database rxli
-paste the sql query in DBTableCreation.sql to create tables
-change the DB_NAME, DB_USERNAME, DB_PASSWORD to your database in secrets.cfg
+- open your mysql database with `mysql -u root -p`
+- run the files in `DBMigration` to create tables
+- change the DB_NAME, DB_USERNAME, DB_PASSWORD to your database in secrets.cfg
 
 3. run the following code to start the project on port 5000
-python -m flask run -p 5000
+`python -m flask run -p 5000`
 
 
 ### Functionalities
@@ -22,7 +21,7 @@ python -m flask run -p 5000
   and can click one to enter that channel. Inside, they see all the messages
   posted to that channel by any user, and can post their own messages.
   All messages belong to a channel and all channels are visible to all users
-  - Channel names are unique strings of numbers, letters, and underscores (and no
+- Channel names are unique strings of numbers, letters, and underscores (and no
   spaces). Any user can create a new channel, and the user who created a channel
   can delete it and all messages.
 - Like Slack, messages may be threaded as Replies in response to a message in a
