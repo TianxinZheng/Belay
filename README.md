@@ -14,7 +14,7 @@
 `python -m flask run -p 5000`
 
 
-### Functionalities
+### Features
 
 - Belay lets users send and read real-time chat messages that are organized
   into rooms called Channels. Users see a list of all the channels on the server
